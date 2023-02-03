@@ -1,0 +1,31 @@
+************************************************************************************************************************************************
+[22,27,16,2,18,6] -> Insertion Sort
+
+Adım 1: Dizinin 2.elemanının yani "27" başlangıç elemanı olarak seçelim.
+Adım 2: 2.eleman ile 1. elemanı kıyaslayalım. (27 > 22) olduğundan herhangi bir değişiklik olmayacak, diğer adıma geçelim. [22,27]
+Adım 3: 3.eleman ile 1. ve 2. elemanı kıyaslayalım (16<22 ve 16<27) olduğundan "16" sayısı en başa gelir. [16,22,27]
+Adım 4: 4.eleman ile 1. 2. ve 3. elemanı kıyaslayalım (2<16, 2<22 ve 2<27) olduğundan "2" sayısı en başa gelir [2,16,22,27]
+Adım 5: 5.eleman ile 1. 2. 3. ve 4. elemanı kıyaslayalım (18>2, 18>16, 18<22 ve 18<27) olduğundan "18" sayısı 3.sıraya gelir [2,16,18,22,27]
+Adım 6: 6.eleman ile 1. 2. 3. 4. ve 5. elemanı kıyaslayalım (6>2, 6<16, 6<18, 6<22, 6<27) olduğundan "6" sayısı 2.sıraya gelir [2,6,16,18,22,27]
+// Dizinin sonuncu elemanı da kıyaslandığı için algoritma sonlanır ve dizi Insertion Sort algoritmasına göre küçükten büyüğe sıralanır.
+
+-Algoritma karmaşıklığı O(n^2)'dir.
+- Aradığımız sayı "18" dizinin Orta ile Son elemanının arasında olduğu için karmaşıklık Average Case ile Worst Case arasındadır.
+
+
+************************************************************************************************************************************************
+
+[7,3,5,8,2,9,4,15,6] dizisinin Selection Sort algoritması ile çözümünün ilk 4 adımı:
+
+Adım 1: Başlangıç adım x=0 olarak belirleyelim. Dizinin 0.indeksinden sonraki en küçük sayıyı bulup-
+yeni dizideki 0.indekse atayalım. Bu sayı "2"dir. //Yeni Dizimiz -> [2]
+Adım 2: X değerini her adımda 1 arttıralım, böylece X değerimiz 1 olur. Dizinin 1.indeksinden sonraki-
+en küçük sayı "3"tür. Yeni dizideki X. indekse atayalım. //Yeni Dizimiz -> [2,3]
+Adım 3: X değerini 1 arttıralım X=2 olur. Dizinin 2.indeksinden sonraki en küçük eleman "4"tür.
+Yeni dizideki X indeksine atayalım. //Yeni Dizimiz -> [2,3,4]
+Adım 4: X değerini 1 arttıralım X=3 olur. Dizinin 3.indeksinden sonraki en küçük eleman "5"tir.
+Yeni dizideki X indeksine atayalımç //Yeni Dizimiz -> [2,3,4,5] olur.
+
+Algoritmanın ilk 4 adımı bu şekildedir, diğer adımlar da aynı şekilde devam eder.
+
+************************************************************************************************************************************************
